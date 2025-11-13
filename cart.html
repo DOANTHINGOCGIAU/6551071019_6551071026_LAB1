@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="FoodieStop - Giỏ hàng">
+  <meta name="keywords" content="FoodieStop, giỏ hàng, món ăn, ẩm thực, thanh toán">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodieStop | Giỏ hàng</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Css Styles -->
+  <link rel="stylesheet" href="Styles/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/elegant-icons.css" type="text/css">
+  <link rel="stylesheet" href="Styles/nice-select.css" type="text/css">
+  <link rel="stylesheet" href="Styles/jquery-ui.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/owl.carousel.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/slicknav.min.css" type="text/css">
+  <link rel="stylesheet" href="Styles/style.css" type="text/css">
+</head>
+
+<body style="background-color:#fffdf8;">
+
+  <!-- Page Preloder -->
+  <div id="preloder">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" style="background:#fff6ee;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-3">
+          <div class="header__logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="FoodieStop Logo" style="max-height:60px;"></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="header__menu">
+            <ul>
+              <li><a href="index.html">Trang chủ</a></li>
+              <li><a href="menu.html">Thực đơn</a></li>
+              <li class="active"><a href="cart.html">Giỏ hàng</a></li>
+              <li><a href="blog.html">Bài viết</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3">
+          <div class="header__cart">
+            <ul>
+              <li><a href="#"><i class="fa fa-heart"></i> <span>2</span></a></li>
+              <li><a href="cart.html"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng: <span>350.000đ</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-section set-bg" data-setbg="images/banners/cart-banner.jpg"
+    style="background-color:#f7d6af;">
+    <div class="container text-center">
+      <div class="breadcrumb__text">
+        <h2 style="color:#5a2e0c;">Giỏ hàng của bạn</h2>
+        <div class="breadcrumb__option">
+          <a href="index.html">Trang chủ</a>
+          <span>Giỏ hàng</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="shoping-cart spad">
+    <div class="container">
+      <div class="shoping__cart__table">
+        <table>
+          <thead>
+            <tr>
+              <th class="shoping__product">Món ăn</th>
+              <th>Giá</th>
+              <th>Số lượng</th>
+              <th>Tổng</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="shoping__cart__item">
+                <img src="images/cart/cart-1.jpg" alt="">
+                <h5>Phở bò tái</h5>
+              </td>
+              <td class="shoping__cart__price">45.000đ</td>
+              <td class="shoping__cart__quantity">
+                <div class="quantity">
+                  <div class="pro-qty"><input type="text" value="1"></div>
+                </div>
+              </td>
+              <td class="shoping__cart__total">45.000đ</td>
+              <td class="shoping__cart__item__close"><span class="icon_close"></span></td>
+            </tr>
+
+            <tr>
+              <td class="shoping__cart__item">
+                <img src="images/cart/cart-2.jpg" alt="">
+                <h5>Bánh mì ốp la</h5>
+              </td>
+              <td class="shoping__cart__price">30.000đ</td>
+              <td class="shoping__cart__quantity">
+                <div class="quantity">
+                  <div class="pro-qty"><input type="text" value="2"></div>
+                </div>
+              </td>
+              <td class="shoping__cart__total">60.000đ</td>
+              <td class="shoping__cart__item__close"><span class="icon_close"></span></td>
+            </tr>
+
+            <tr>
+              <td class="shoping__cart__item">
+                <img src="images/cart/cart-3.jpg" alt="">
+                <h5>Trà sữa trân châu</h5>
+              </td>
+              <td class="shoping__cart__price">25.000đ</td>
+              <td class="shoping__cart__quantity">
+                <div class="quantity">
+                  <div class="pro-qty"><input type="text" value="1"></div>
+                </div>
+              </td>
+              <td class="shoping__cart__total">25.000đ</td>
+              <td class="shoping__cart__item__close"><span class="icon_close"></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-12">
+          <div class="shoping__cart__btns text-center">
+            <a href="menu.html" class="primary-btn cart-btn">← Tiếp tục mua sắm</a>
+            <a href="#" class="primary-btn cart-btn cart-btn-right"><span class="icon_loading"></span> Cập nhật giỏ</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="shoping__continue">
+            <div class="shoping__discount">
+              <h5>Mã giảm giá</h5>
+              <form action="#">
+                <input type="text" placeholder="Nhập mã khuyến mãi">
+                <button type="submit" class="site-btn">Áp dụng</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="shoping__checkout">
+            <h5>Tổng đơn hàng</h5>
+            <ul>
+              <li>Tạm tính <span>130.000đ</span></li>
+              <li>Thành tiền <span>130.000đ</span></li>
+            </ul>
+            <a href="checkout.html" class="primary-btn">Tiến hành thanh toán</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer spad" style="background-color:#fff6ee;">
+    <div class="container text-center">
+      <p style="color:#5a2e0c;">© 2025 FoodieStop | Nơi hương vị lên tiếng 🍜</p>
+    </div>
+  </footer>
+  
+
+  <!-- Js Plugins -->
+  <script src="Scripts/jquery-3.3.1.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+  <script src="Scripts/jquery.nice-select.min.js"></script>
+  <script src="Scripts/jquery-ui.min.js"></script>
+  <script src="Scripts/jquery.slicknav.js"></script>
+  <script src="Scripts/mixitup.min.js"></script>
+  <script src="Scripts/owl.carousel.min.js"></script>
+  <script src="Scripts/main.js"></script>
+
+</body>
+
+</html>

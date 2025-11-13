@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="FoodieStop - Thực phẩm tươi ngon, giao hàng nhanh">
+    <meta name="keywords" content="FoodieStop, thực phẩm, đồ ăn, organic, món ngon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieStop | Tươi ngon mỗi ngày</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles (theo cấu trúc của bạn) -->
+    <link rel="stylesheet" href="Styles/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="Styles/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="Styles/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+    <!-- Trong <head> của HTML -->
+
+</head>
+
+<body>
+    <!-- Page Preloader -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger (mobile) Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="FoodieStop"></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng: <span>350.000đ</span></div>
+        </div>
+         <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="images/language.png" alt="">
+                <div>VietNamese</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">VietNamese</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./menu.html">Thực đơn</a></li>
+                <li><a href="#">Trang</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./detail.html">Chi tiết món</a></li>
+                        <li><a href="./cart.html">Giỏ hàng</a></li>
+                        <li><a href="./checkout.html">Thanh toán</a></li>
+                        <li><a href="./blog-details.html">Chi tiết bài viết</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Bài viết</a></li>
+                <li><a href="./contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> contact@foodiestop.vn</li>
+                <li>Giao hàng miễn phí cho đơn từ 199k</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top" style="background:#c97b42;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> contact@foodiestop.vn</li>
+                                <li>Miễn phí giao hàng từ 199.000đ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-tiktok"></i></a>
+                            </div>
+                             <div class="header__top__right__language">
+                                <img src="images/language.png" alt="">
+                                <div>VietNamese</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">VietNamese</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo & Menu -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="images/logo.jpg" alt="FoodieStop"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./menu.html">Thực đơn</a></li>
+                            <li><a href="./blog.html">Bài viết</a></li>
+                            <li><a href="./contact.html">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Tổng: <span>350.000đ</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <!-- Categories -->
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all" style="background:#c97b42;">
+                            <i class="fa fa-bars"></i>
+                            <span>Danh mục</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Món chính</a></li>
+                            <li><a href="#">Món chay</a></li>
+                            <li><a href="#">Tráng miệng</a></li>
+                            <li><a href="#">Đồ uống</a></li>
+                            <li><a href="#">Rau củ</a></li>
+                            <li><a href="#">Hải sản</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Search & Banner -->
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="menu.html" method="get">
+                                <div class="hero__search__categories">
+                                    Tất cả
+                                    <span class="arrow_carrot-down"></span>
+                                </div>
+                                <input type="text" name="q" placeholder="Bạn muốn ăn gì hôm nay?">
+                                <button type="submit" class="site-btn" style="background:#c97b42;">TÌM KIẾM</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>1900 886 688</h5>
+                                <span>Hỗ trợ 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero__item set-bg" data-setbg="images/hero/banner1.jpg">
+                        <div class="hero__text">
+                            <span style="color:#c97b42;">THỰC PHẨM TƯƠI NGON</span>
+                            <h2>Ăn sạch<br />Sống khỏe mỗi ngày</h2>
+                            <p>Nguyên liệu chọn lọc — Giao hàng nhanh — An tâm chất lượng</p>
+                            <a href="menu.html" class="primary-btn" style="background:#c97b42;">KHÁM PHÁ NGAY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="container">
+            <div class="row">
+                <div class="categories__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/categories/vegetable.jpg">
+                            <h5><a href="menu.html?cat=rau">Rau củ tươi</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/categories/fruit.jpg">
+                            <h5><a href="menu.html?cat=trai-cay">Trái cây</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/categories/meat.jpg">
+                            <h5><a href="menu.html?cat=thit">Thịt tươi</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="images/categories/drink.jpg">
+                            <h5><a href="menu.html?cat=drink">Đồ uống</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Featured Section Begin -->
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Gợi ý hôm nay</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">Tất cả</li>
+                            <li data-filter=".main">Món chính</li>
+                            <li data-filter=".vege">Rau củ</li>
+                            <li data-filter=".drink">Đồ uống</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <!-- item 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix main">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/menu/food1.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="detail.html?id=1">Cơm gà xé</a></h6>
+                            <h5>65.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vege">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/menu/food2.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="detail.html?id=2">Gỏi cuốn tôm</a></h6>
+                            <h5>45.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix main">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/menu/food3.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="detail.html?id=3">Bánh mì chảo</a></h6>
+                            <h5>55.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mix drink">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="images/menu/drink1.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+                                <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="detail.html?id=4">Sinh tố dâu</a></h6>
+                            <h5>39.000đ</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section End -->
+
+    <!-- Banner Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="images/banners/promo1.jpg" alt="Promo 1">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="images/banners/promo2.jpg" alt="Promo 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Latest Product Section Begin -->
+    <section class="latest-product spad">
+        <div class="container">
+            <div class="row">
+                <!-- Latest -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Mới nhất</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="detail.html?id=5" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/menu/new1.jpg" alt="new1">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Bánh bột lọc</h6>
+                                        <span>25.000đ</span>
+                                    </div>
+                                </a>
+                                <a href="detail.html?id=6" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/menu/new2.jpg" alt="new2">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Salad trái cây</h6>
+                                        <span>35.000đ</span>
+                                    </div>
+                                </a>
+                                <a href="detail.html?id=7" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/menu/new3.jpg" alt="new3">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Chè hạt sen</h6>
+                                        <span>29.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Top rated -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Yêu thích</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="detail.html?id=1" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/menu/food1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Cơm gà xé</h6>
+                                        <span>65.000đ</span>
+                                    </div>
+                                </a>
+                                <a href="detail.html?id=2" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/menu/food2.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Gỏi cuốn</h6>
+                                        <span>45.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Đánh giá</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/menu/review1.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Súp bí đỏ</h6>
+                                        <span>49.000đ</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="images/menu/review2.jpg" alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Cà ri gà</h6>
+                                        <span>75.000đ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Product Section End -->
+
+    <!-- Blog Section Begin -->
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>Tin tức & Mẹo nấu ăn</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- blog item 1 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="images/blog/healthy-meal.jpg" alt="blog1">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> 04/05/2025</li>
+                                <li><i class="fa fa-comment-o"></i> 8</li>
+                            </ul>
+                            <h5><a href="blog-details1.html?id=1">3 Món Ăn Healthy Cho Ngày Làm Việc Năng Động</a></h5>
+                            <p>Nếu bạn đang tìm kiếm những món ăn vừa ngon miệng, vừa nạp năng lượng lành mạnh cho ngày làm việc bận rộn, hãy thử ngay 3 món dưới đây.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- blog item 2 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="images/blog/saigon-food.jpg" alt="blog2">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> 28/04/2025</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="blog-details2.html?id=2">Những Đặc Sản Sài Gòn Không Thể Bỏ Lỡ</a></h5>
+                            <p>Thành phố không ngủ - nơi ẩm thực đường phố hòa cùng nhịp sống trẻ trung và đầy sáng tạo</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- blog item 3 -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="images/blog/hanoi-festival.jpg" alt="blog3">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> 10/04/2025</li>
+                                <li><i class="fa fa-comment-o"></i> 12</li>
+                            </ul>
+                            <h5><a href="blog-details3.html?id=3">Ngày Hội Ẩm Thực tại Cung Đường Ẩm Thực Hà Nội</a></h5>
+                            <p>Khám phá hương vị Bắc Bộ trong không khí rộn ràng của ngày hội ẩm thực đặc sắc nhất năm!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="images/logo.jpg" alt="FoodieStop"></a>
+                        </div>
+                        <ul>
+                            <li>Địa chỉ: 123 Nguyễn Huệ, TP. HCM</li>
+                            <li>Hotline: 1900 886 688</li>
+                            <li>Email: contact@foodiestop.vn</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Liên kết</h6>
+                        <ul>
+                            <li><a href="about.html">Về chúng tôi</a></li>
+                            <li><a href="menu.html">Thực đơn</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Đăng ký nhận tin</h6>
+                        <p>Nhận thông tin khuyến mãi và mẹo nấu ăn hàng tuần.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Nhập email của bạn">
+                            <button type="submit" class="site-btn" style="background:#c97b42;">ĐĂNG KÝ</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text">
+                            <p>© <script>document.write(new Date().getFullYear());</script> FoodieStop. Tất cả quyền được bảo lưu.</p>
+                        </div>
+                        <div class="footer__copyright__payment"><img src="images/icons/payment.png" alt="payment"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.nice-select.min.js"></script>
+    <script src="Scripts/jquery-ui.min.js"></script>
+    <script src="Scripts/jquery.slicknav.js"></script>
+    <script src="Scripts/mixitup.min.js"></script>
+    <script src="Scripts/owl.carousel.min.js"></script>
+    <script src="Scripts/main.js"></script>
+
+</body>
+
+</html>

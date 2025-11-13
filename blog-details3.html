@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ngày Hội Ẩm Thực tại Cung Đường Ẩm Thực Hà Nội | FoodieStop</title>
+ <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles (theo cấu trúc của bạn) -->
+    <link rel="stylesheet" href="Styles/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="Styles/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="Styles/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="Styles/style.css" type="text/css">
+    <link rel="stylesheet" href="Styles/blog-detail.css" type="text/css">
+    <!-- Trong <head> của HTML -->
+
+</head>
+
+<body>
+    <!-- Page Preloader -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger (mobile) Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="index.html"><img src="images/logo.jpg" alt="FoodieStop"></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            </ul>
+            <div class="header__cart__price">Tổng: <span>350.000đ</span></div>
+        </div>
+         <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="images/language.png" alt="">
+                <div>VietNamese</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">VietNamese</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__auth">
+                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./menu.html">Thực đơn</a></li>
+                <li><a href="#">Trang</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./detail.html">Chi tiết món</a></li>
+                        <li><a href="./cart.html">Giỏ hàng</a></li>
+                        <li><a href="./checkout.html">Thanh toán</a></li>
+                        <li><a href="./blog-details.html">Chi tiết bài viết</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Bài viết</a></li>
+                <li><a href="./contact.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> contact@foodiestop.vn</li>
+                <li>Giao hàng miễn phí cho đơn từ 199k</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top" style="background:#c97b42;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> contact@foodiestop.vn</li>
+                                <li>Miễn phí giao hàng từ 199.000đ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-tiktok"></i></a>
+                            </div>
+                             <div class="header__top__right__language">
+                                <img src="images/language.png" alt="">
+                                <div>VietNamese</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">VietNamese</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo & Menu -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="images/logo.jpg" alt="FoodieStop"></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./menu.html">Thực đơn</a></li>
+                            <li><a href="./blog.html">Bài viết</a></li>
+                            <li><a href="./contact.html">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">Tổng: <span>350.000đ</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+<section class="blog-detail-3 py-5">
+  <div class="container">
+    <div class="intro text-center mb-5">
+      <h1 class="fw-bold text-danger">Ngày Hội Ẩm Thực tại Cung Đường Ẩm Thực Hà Nội</h1>
+      <p class="text-muted">Khám phá hương vị Bắc Bộ trong không khí rộn ràng của ngày hội ẩm thực đặc sắc nhất năm!</p>
+      <span class="post-meta"><i class="fa fa-calendar"></i> 10/11/2025 &nbsp; | &nbsp; <i class="fa fa-user"></i> FoodieStop Team</span>
+    </div>
+
+    <div class="blog-main">
+      <!-- Ảnh banner lớn -->
+      <div class="main-image mb-4">
+        <img src="images/blog/hanoi-festival.jpg" alt="Ngày hội ẩm thực Hà Nội" class="img-fluid rounded-4 shadow-sm">
+      </div>
+
+      <!-- Nội dung chính -->
+      <div class="blog-body">
+        <div class="highlight-box mb-5">
+          <p>
+            Từ sáng sớm, hương thơm từ những quầy phở, bún chả, nem rán... lan tỏa khắp con phố. 
+            Hàng trăm gian hàng quy tụ tại <strong>Cung Đường Ẩm Thực Hà Nội</strong> đã mang đến 
+            một bức tranh đầy màu sắc và hương vị đặc trưng của miền Bắc Việt Nam.
+          </p>
+        </div>
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-6">
+            <h3 class="fw-semibold text-danger">Hương vị truyền thống hội tụ</h3>
+            <p>
+              Món <strong>phở bò Hà Nội</strong> vẫn là tâm điểm, thu hút du khách bằng vị nước dùng thanh ngọt, 
+              bánh phở mềm, thịt bò tươi và chút hành hoa xanh mướt. Bên cạnh đó, 
+              <em>bún chả</em> với miếng chả nướng vàng ruộm và nước chấm chua ngọt cũng khiến ai nấy xuýt xoa.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img src="images/menu/pho-bo.jpg" alt="Phở và bún chả" class="img-fluid rounded shadow-sm">
+          </div>
+        </div>
+
+        <div class="row align-items-center mb-5 flex-lg-row-reverse">
+          <div class="col-lg-6">
+            <h3 class="fw-semibold text-danger">Ẩm thực sáng tạo từ giới trẻ</h3>
+            <p>
+              Không chỉ dừng lại ở món truyền thống, năm nay lễ hội còn ghi nhận sự xuất hiện 
+              của các món “fusion” độc đáo như <strong>phở cuốn phô mai</strong>, 
+              <strong>bánh mì nướng mật ong</strong> hay <strong>trà chanh hoa nhài</strong> – 
+              mang hơi thở hiện đại nhưng vẫn đậm chất Hà Nội.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img src="images/menu/bun-cha-ca.jpg" alt="Món ăn sáng tạo Hà Nội" class="img-fluid rounded shadow-sm">
+          </div>
+        </div>
+
+        <blockquote class="festival-quote">
+          <i class="fa fa-quote-left"></i>
+          “Ngày hội không chỉ là nơi thưởng thức ẩm thực - mà còn là nơi kết nối con người, văn hóa và tình yêu với Hà Nội.”
+        </blockquote>
+
+        <div class="experience-section mt-5">
+          <h3 class="fw-semibold text-danger mb-3">Góc Trải Nghiệm Thực Khách</h3>
+          <div class="testimonial-card p-4 rounded-4 shadow-sm">
+            <p>
+              “Lần đầu tiên tôi được nếm thử nhiều món đặc sản miền Bắc cùng lúc như thế! 
+              Không khí lễ hội thật sôi động, âm nhạc dân gian xen lẫn mùi đồ nướng khiến mọi giác quan đều được đánh thức.”
+            </p>
+            <h6 class="mt-2 text-end text-secondary">- Ngọc Anh, du khách TP.HCM</h6>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="blog-tags mt-5">
+          <strong>Tags:</strong>
+          <a href="#">Ẩm thực Hà Nội</a>
+          <a href="#">Lễ hội</a>
+          <a href="#">FoodieStop</a>
+        </div>
+
+        <!-- Bình luận -->
+        <div class="blog-comments mt-5">
+          <h4 class="fw-semibold mb-3">Bình luận</h4>
+          <div class="comment-form">
+            <form action="#">
+              <input type="text" placeholder="Tên của bạn">
+              <textarea placeholder="Viết bình luận..."></textarea>
+              <button type="submit" class="btn-submit">Gửi</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="images/logo.jpg" alt="FoodieStop"></a>
+                        </div>
+                        <ul>
+                            <li>Địa chỉ: 123 Nguyễn Huệ, TP. HCM</li>
+                            <li>Hotline: 1900 886 688</li>
+                            <li>Email: contact@foodiestop.vn</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Liên kết</h6>
+                        <ul>
+                            <li><a href="about.html">Về chúng tôi</a></li>
+                            <li><a href="menu.html">Thực đơn</a></li>
+                            <li><a href="contact.html">Liên hệ</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Chính sách đổi trả</a></li>
+                            <li><a href="#">Chính sách bảo mật</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Đăng ký nhận tin</h6>
+                        <p>Nhận thông tin khuyến mãi và mẹo nấu ăn hàng tuần.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Nhập email của bạn">
+                            <button type="submit" class="site-btn" style="background:#c97b42;">ĐĂNG KÝ</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text">
+                            <p>© <script>document.write(new Date().getFullYear());</script> FoodieStop. Tất cả quyền được bảo lưu.</p>
+                        </div>
+                        <div class="footer__copyright__payment"><img src="images/icons/payment.png" alt="payment"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.nice-select.min.js"></script>
+    <script src="Scripts/jquery-ui.min.js"></script>
+    <script src="Scripts/jquery.slicknav.js"></script>
+    <script src="Scripts/mixitup.min.js"></script>
+    <script src="Scripts/owl.carousel.min.js"></script>
+    <script src="Scripts/main.js"></script>
+
+
+</body>
+</html>
